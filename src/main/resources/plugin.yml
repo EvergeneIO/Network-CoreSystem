@@ -1,0 +1,5 @@
+name: CoreSystem
+version: ${project.version}
+main: de.polygondev.coresystem.CoreSystem
+api-version: 1.13
+authors: [ChiAkuma, cembalo515]
