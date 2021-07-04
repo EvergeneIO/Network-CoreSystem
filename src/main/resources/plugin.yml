@@ -9,3 +9,8 @@ commands:
   setspawn:
     description: Set the spawn location
     permission: coresystem.setspawn
+  warp:
+    description: Teleport to a set warp
+  setwarp:
+    description: Set a warp point
+    permission: coresystem.setwarp

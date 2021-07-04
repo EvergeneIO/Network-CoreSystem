@@ -1,16 +1,15 @@
 prefix:
-  pref: "§7[§9Evergene§7]§r"
+  pref: "§7[§9Evergene§7]§r "
   showPrefix: true
-coreSystemInfo:
-  - "Plugin info:"
-  - "Plugin by SamyoFox andChiAkuma"
-spawnSetSuccessful:
-  - "§aThe spawn location has been successfully set"
-spawnSetNoPerm:
-  - "§cYou don't have the required permission to execute this command!"
-spawnSetTerminal:
-  - "§cYou cant get the location of the server console. Its always in the terminal."
-spawnTeleport:
-  - "§aYou were teleported back to the spawn"
-spawnTerminal:
-  - "§cThe server console cant be teleported anywhere"
+coreSystemInfo: "Plugin info:\nPlugin by SamyoFox and ChiAkuma"
+spawnSetSuccessful: "§aThe spawn location has been successfully set"
+noPermission: "§cYou don't have the required permission to execute this command!"
+spawnSetTerminal: "§cYou cant get the location of the server console. Its always in the terminal."
+spawnTeleport: "§aYou were teleported back to the spawn"
+terminalNoTeleport: "§cThe server console cant be teleported anywhere"
+warpListPrefix: "§6Available warps: "
+warpSuccess: "§aSuccessfully warped to "
+setWarpSuccess: "§aSuccessfully set warp "
+setWarpNoName: "§cPlease enter a name for the warp!"
+setWarpAlreadyExists: "§cThis warp already exists!"
+warpNotExist: "§cThis warp doesn't exist!"
