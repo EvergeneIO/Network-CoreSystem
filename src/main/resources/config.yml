@@ -1,15 +1,22 @@
-messages:
-  prefix: "§7[§9Evergene§7]§r "
+#sets the name of the server to use within the sql database and linking system
+Server : "global"
+#tells the server to automatically get the server name (is done via a proxy plugin)
+automaticServerNameUpdate: false
+#defines the spawn location of this server
 spawn:
   location:
+    world: "world"
     x: 0.0
-    y: 0.0
+    y: 65.0
     z: 0.0
     yaw: 0.0
     pitch: 0.0
+    #you can define more than one spawn and have them for special ranks only "global" is the global spawnpoint. if not overwritten by other rank-spawn
+    rank: "global"
 database:
   mysql:
-    host: "localhost:3001"
+    host: "localhost:3306"
     database: "coreplugin"
     username: "root"
     password: "password"
+    tablePrefix: "Core_"
