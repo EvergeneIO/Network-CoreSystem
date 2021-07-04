@@ -62,6 +62,10 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
+        <repository>
+            <id>inventoryApi</id>
+            <url>https://raw.github.com/PolygonDev/InventoryApi/repository/</url>
+        </repository>
     </repositories>
 
     <dependencies>
