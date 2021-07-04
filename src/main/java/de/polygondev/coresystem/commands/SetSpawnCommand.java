@@ -26,12 +26,12 @@ public class SetSpawnCommand implements CommandExecutor {
                 CoreSystem.config.set("spawn.location.pitch", p.getLocation().getYaw());
                 CoreSystem.instance.saveConfig();
                 // Notify the player
-                p.sendMessage(Data.prefix + "§aThe spawn location has been successfully set.");
+                p.sendMessage(Data.prefix + CoreSystem.lang.getString("spawnSetSuccessful"));
             } else {
-                p.sendMessage(Data.prefix + "§cYou don't have the required permission to execute this command!");
+                p.sendMessage(Data.prefix + CoreSystem.lang.getString("noPermission"));
             }
         } else {
-            commandSender.sendMessage(Data.prefix + "§cYou cant get the location of the server console. Its always in the terminal.");
+            commandSender.sendMessage(Data.prefix + CoreSystem.lang.getString("spawnSetTerminal"));
         }
         return false;
     }
