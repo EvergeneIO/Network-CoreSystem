@@ -18,21 +18,8 @@ public final class CoreSystem extends JavaPlugin {
         instance = this;
         getCommand("spawn").setExecutor(new SpawnCommand());
         getCommand("setspawn").setExecutor(new SetSpawnCommand());
-        // Set the default config values
-        config.addDefault("messages.prefix", "§7[§9Evergene§7]§r ");
-        config.addDefault("spawn.location.x", 0.0);
-        config.addDefault("spawn.location.y", 0.0);
-        config.addDefault("spawn.location.z", 0.0);
-        config.addDefault("spawn.location.yaw", 0.0);
-        config.addDefault("spawn.location.pitch", 0.0);
-        config.addDefault("database.mysql.host", "localhost:3001");
-        config.addDefault("database.mysql.database", "coreplugin");
-        config.addDefault("database.mysql.username", "root");
-        config.addDefault("database.mysql.password", "password");
-        // Copy these defaults into the file if the config file doesnt exist
-        config.options().copyDefaults(true);
-        // Save the config
-        saveConfig();
+        // Save default config if the config doesnt exist yet
+        saveDefaultConfig();
     }
 
     @Override
