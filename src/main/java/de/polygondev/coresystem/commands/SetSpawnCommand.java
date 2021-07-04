@@ -17,20 +17,13 @@ public class SetSpawnCommand implements CommandExecutor {
             Player p = (Player) commandSender;
             // Check if the player has the permission coresystem.setspawn
             if (p.hasPermission("coresystem.setspawn")){
-                // Get the coordinates (x, y, z)and the facing values (yaw and pitch)
-                String worldName = p.getLocation().getWorld().getName();
-                double x = p.getLocation().getX();
-                double y = p.getLocation().getY();
-                double z = p.getLocation().getZ();
-                double pitch = p.getLocation().getPitch();
-                double yaw = p.getLocation().getYaw();
-                // Save them in the config file
-                CoreSystem.config.set("spawn.location.world", worldName);
-                CoreSystem.config.set("spawn.location.x", x);
-                CoreSystem.config.set("spawn.location.y", y);
-                CoreSystem.config.set("spawn.location.z", z);
-                CoreSystem.config.set("spawn.location.yaw", yaw);
-                CoreSystem.config.set("spawn.location.pitch", pitch);
+                // Save the coordinates (x, y, z) and the facing direction (yaw, pitch) in the config file
+                CoreSystem.config.set("spawn.location.world", p.getLocation().getWorld().getName());
+                CoreSystem.config.set("spawn.location.x", p.getLocation().getX());
+                CoreSystem.config.set("spawn.location.y", p.getLocation().getY());
+                CoreSystem.config.set("spawn.location.z", p.getLocation().getZ());
+                CoreSystem.config.set("spawn.location.yaw", p.getLocation().getPitch());
+                CoreSystem.config.set("spawn.location.pitch", p.getLocation().getYaw());
                 CoreSystem.instance.saveConfig();
                 // Notify the player
                 p.sendMessage(Data.prefix + "§aThe spawn location has been successfully set.");
