@@ -1,15 +1,28 @@
 prefix:
   pref: "§7[§9Evergene§7]§r "
   showPrefix: true
-coreSystemInfo: "Plugin info:\nPlugin by SamyoFox and ChiAkuma"
-spawnSetSuccessful: "§aThe spawn location has been successfully set"
-noPermission: "§cYou don't have the required permission to execute this command!"
-spawnSetTerminal: "§cYou cant get the location of the server console. Its always in the terminal."
-spawnTeleport: "§aYou were teleported back to the spawn"
-terminalNoTeleport: "§cThe server console cant be teleported anywhere"
-warpListPrefix: "§6Available warps: "
-warpSuccess: "§aSuccessfully warped to "
-setWarpSuccess: "§aSuccessfully set warp "
-setWarpNoName: "§cPlease enter a name for the warp!"
-setWarpAlreadyExists: "§cThis warp already exists!"
-warpNotExist: "§cThis warp doesn't exist!"
+coreSystemInfo:
+  - "Plugin info: "
+  - "Plugin by SamyoFox and ChiAkuma"
+spawnSetSuccessful:
+  - "[§aThe spawn location has been successfully set§r]"
+noPermission:
+  - "[§cYou don't have the required permission to execute this command!§r]"
+spawnSetTerminal:
+  - "[§cYou cant get the location of the server console. Its always in the terminal.§r]"
+spawnTeleport:
+  - "[§aYou were teleported back to the spawn§r]"
+terminalNoTeleport:
+  - "[§cThe server console cant be teleported anywhere§r]"
+warpListPrefix:
+  - "[§6Available warps: ?0§r]"
+warpSuccess:
+  - "[§aSuccessfully warped to ?0§r]"
+setWarpSuccess:
+  - "[§aSuccessfully set warp ?0§r]"
+setWarpNoName:
+  - "[§cPlease enter a name for the warp!§r]"
+setWarpAlreadyExists:
+  - "[§cThis warp already exists!§r]"
+warpNotExist:
+  - "[§cThis warp doesn't exist!§r]"

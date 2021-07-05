@@ -16,9 +16,11 @@ public class SpawnCommand implements CommandExecutor {
         if (commandSender instanceof Player){
             Player p = (Player) commandSender;
             p.teleport(new Location(Bukkit.getWorld(CoreSystem.config.getString("spawn.location.world")), CoreSystem.config.getDouble("spawn.location.x"), CoreSystem.config.getDouble("spawn.location.y"), CoreSystem.config.getDouble("spawn.location.z"), (float)CoreSystem.config.getDouble("spawn.location.yaw"), (float)CoreSystem.config.getDouble("spawn.location.pitch")));
-            p.sendMessage(Data.prefix + CoreSystem.lang.getString("spawnTeleport"));
+            //p.sendMessage(Data.prefix + CoreSystem.lang.getString("spawnTeleport"));
+            CoreSystem.messaging.sendMessage(null, "spawnTeleport", p);
         } else {
-            commandSender.sendMessage(Data.prefix + CoreSystem.lang.getString("terminalNoTeleport"));
+            //commandSender.sendMessage(Data.prefix + CoreSystem.lang.getString("terminalNoTeleport"));
+            CoreSystem.messaging.sendMessage(null, "terminalNoTeleport", commandSender);
         }
         return false;
     }

@@ -39,6 +39,8 @@ public final class CoreSystem extends JavaPlugin {
 
     @Override
     public void onDisable() {
-
+        //Alles entladen damit man das pl reloaden kann (ist immer ein tolles feature)
+        messaging = null;
+        config = null;
     }
 }

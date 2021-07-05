@@ -22,16 +22,19 @@ public class SetSpawnCommand implements CommandExecutor {
                 CoreSystem.config.set("spawn.location.x", p.getLocation().getX());
                 CoreSystem.config.set("spawn.location.y", p.getLocation().getY());
                 CoreSystem.config.set("spawn.location.z", p.getLocation().getZ());
-                CoreSystem.config.set("spawn.location.yaw", p.getLocation().getPitch());
-                CoreSystem.config.set("spawn.location.pitch", p.getLocation().getYaw());
+                CoreSystem.config.set("spawn.location.yaw", p.getLocation().getYaw());
+                CoreSystem.config.set("spawn.location.pitch", p.getLocation().getPitch());
                 CoreSystem.instance.saveConfig();
                 // Notify the player
-                p.sendMessage(Data.prefix + CoreSystem.lang.getString("spawnSetSuccessful"));
+                //p.sendMessage(Data.prefix + CoreSystem.lang.getString("spawnSetSuccessful"));
+                CoreSystem.messaging.sendMessage(null, "spawnSetSuccessful", p);
             } else {
-                p.sendMessage(Data.prefix + CoreSystem.lang.getString("noPermission"));
+                //p.sendMessage(Data.prefix + CoreSystem.lang.getString("noPermission"));
+                CoreSystem.messaging.sendMessage(null, "noPermission", p);
             }
         } else {
-            commandSender.sendMessage(Data.prefix + CoreSystem.lang.getString("spawnSetTerminal"));
+            //commandSender.sendMessage(Data.prefix + CoreSystem.lang.getString("spawnSetTerminal"));
+            CoreSystem.messaging.sendMessage(null, "noPermission", commandSender);
         }
         return false;
     }
