@@ -12,9 +12,11 @@ spawn:
     yaw: 0.0
     pitch: 0.0
     #you can define more than one spawn and have them for special ranks only "global" is the global spawnpoint. if not overwritten by other rank-spawn
+    #not yet implemented
     rank: "global"
 database:
   mysql:
+    use: false
     host: "localhost:3306"
     database: "coreplugin"
     username: "root"

@@ -14,3 +14,6 @@ commands:
   setwarp:
     description: Set a warp point
     permission: coresystem.setwarp
+  gm:
+    description: change your gamemode or others
+    permission: coresystem.gamemode
