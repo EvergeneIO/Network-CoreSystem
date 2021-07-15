@@ -20,3 +20,6 @@ commands:
   tp:
     description: Teleport to a location or to a player
     permission: coresystem.tp
+  awoo:
+    description: awoo
+    permission: coresystem.awoo
