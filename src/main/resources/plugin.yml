@@ -23,3 +23,9 @@ commands:
   awoo:
     description: awoo
     permission: coresystem.awoo
+  tpa:
+    description: Send a teleport request to someone
+  tpaccept:
+    description: Accept a teleport request
+  tpadecline:
+    description: Decline a teleport request

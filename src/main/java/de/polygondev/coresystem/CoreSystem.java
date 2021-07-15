@@ -37,6 +37,9 @@ public final class CoreSystem extends JavaPlugin {
         getCommand("tp").setExecutor(new TpCommand());
         getCommand("tp").setTabCompleter(new TpCommand());
         getCommand("awoo").setExecutor(new AwooCommand());
+        getCommand("tpa").setExecutor(new TpaCommand());
+        getCommand("tpaccept").setExecutor(new TpAcceptCommand());
+        getCommand("tpadecline").setExecutor(new TpaDeclineCommand());
 
         GamemodeCommand cmd_gm = new GamemodeCommand();
         getCommand("gm").setExecutor(cmd_gm);

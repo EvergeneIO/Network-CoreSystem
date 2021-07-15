@@ -41,7 +41,7 @@ tpNoArgs:
   - "§cYou have given no or invalid arguments. Valid are:"
   - "§a/tp x y z"
   - "§a/tp playerName"
-tpOffline:
+playerOffline:
   - "§cThis player is currently offline."
 tpSuccess:
   - "§aYou have been successfully teleported"
@@ -49,3 +49,21 @@ tpSuccessOther:
   - "§aYou successfully teleported another player"
 tpOtherMsg:
   - "§aYou have been teleported by another player"
+tpaNoArgs:
+  - "§cYou have given no or invalid arguments. Valid is:"
+  - "§c/tpa PlayerName"
+tpaDestination:
+  - "§6?0 has sent you a teleportation request."
+  - "§6Use §c/tpaccept §6to §aaccept the request"
+  - "§6Use §c/tpadecline §6to §cdecline §6the request"
+  - "§6This request expires after §c30 seconds"
+tpaRequestExpired:
+  - "§cThe teleportation request has expired."
+tpaRequestAlready:
+  - "§cThis player already has a ongoing teleportation request. You can try again after max. 30 seconds!"
+tpaRequestNone:
+  - "§cYou currently don't have any teleportation requests pending"
+tpaRequestDeclined:
+  - "§cYour teleportation request has been declined"
+tpaRequestAccepted:
+  - "§cYour teleportation request has been accepted"
