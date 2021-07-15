@@ -17,3 +17,6 @@ commands:
   gm:
     description: change your gamemode or others
     permission: coresystem.gamemode
+  tp:
+    description: Teleport to a location or to a player
+    permission: coresystem.tp

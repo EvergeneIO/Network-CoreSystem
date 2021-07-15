@@ -34,6 +34,8 @@ public final class CoreSystem extends JavaPlugin {
         getCommand("setspawn").setExecutor(new SetSpawnCommand());
         getCommand("warp").setExecutor(new WarpCommand());
         getCommand("setwarp").setExecutor(new SetWarpCommand());
+        getCommand("tp").setExecutor(new TpCommand());
+        getCommand("tp").setTabCompleter(new TpCommand());
 
         GamemodeCommand cmd_gm = new GamemodeCommand();
         getCommand("gm").setExecutor(cmd_gm);
@@ -43,7 +45,7 @@ public final class CoreSystem extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        //Alles entladen damit man das pl reloaden kann (ist immer ein tolles feature)
+        // Alles entladen damit man das Plugin reloaden kann (ist immer ein tolles Feature)
         messaging = null;
         config = null;
     }

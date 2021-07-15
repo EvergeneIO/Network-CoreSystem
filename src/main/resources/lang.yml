@@ -37,3 +37,15 @@ gamemodeNoArgs:
   - "[§c| survival | creative | adventure | spectator |§r]"
   - "[§c|     0      |      1     |      2       |       3      |§r]"
   - "[§c|     s      |      c     |      a       |       o      |§r]"
+tpNoArgs:
+  - "§cYou have given no or invalid arguments. Valid are:"
+  - "§a/tp x y z"
+  - "§a/tp playerName"
+tpOffline:
+  - "§cThis player is currently offline."
+tpSuccess:
+  - "§aYou have been successfully teleported"
+tpSuccessOther:
+  - "§aYou successfully teleported another player"
+tpOtherMsg:
+  - "§aYou have been teleported by another player"
